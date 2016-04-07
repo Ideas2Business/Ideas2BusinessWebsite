@@ -1,0 +1,12 @@
+﻿@{
+    HttpCookie lang = Request.Cookies["lang"];
+    if(lang.Value == "Portugues")
+    {
+        Layout = "~/Views/Shared/_LayoutPt.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    
+}

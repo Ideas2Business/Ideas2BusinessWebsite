@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+}
+<script>
+    $(document).ready(function () {
+        selectMenuItem('contact');
+    });
+</script>
+<section id="contactContent">
+    <h2>Contact us</h2>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <input type="text" placeholder="name" id="inputName" />
+            <input type="email" placeholder="email" id="inputEmail" />
+            <textarea rows="10" cols="50" placeholder="your text here" id="textAreaMessage"></textarea>
+            <input type="button" value="send" onclick="submitEmailForm('en')" />
+        </div>
+        <div>
+            We are available to start new projects or for freelance work. <br />
+            Send us an email to
+            <img alt="contato@ideas2business.com.br" style="margin: 0 0 -5px 1px" title="contato@ideas2business.com.br" src="@Url.Content("../../Images/emailAddr.png")" /> 
+            and tell us about your project, or contact us filling this form.
+        </div>
+    }
+</section>

@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Team";
+}
+<script>
+    $(document).ready(function () {
+        selectMenuItem('team');
+    });
+</script>
+<section class="content">
+    <h1>Quem somos nós</h1>
+    <div class="column-text">
+        Nós somos um time de software e web developers. Sempre focados no desenvolvimento técnico, trabalhamos juntos para garantir
+        que seus projetos sejam entregues no prazo, com as especificações corretas e a melhor qualidade.
+        <br />
+        Somos especialistas no desenvolvimento de sistemas.
+        Nossa equipe poderá ajudar você a atingir seus objetivos ao criar soluções técnicas e simples.
+    </div>
+</section>
+
+<table class="content team">
+    <tr>
+        <td>
+            <div id="profileCassia">
+                <img alt="Cássia Almeida" class="pictureProfile" src="@Url.Content("../../Images/cassia.png")" onclick="selectProfile(1)"/> <br />
+                <img alt="Citação" src="@Url.Content("../../Images/quotes.png")" />
+                <label>Life is too short for a bad code - Trey Jackson</label>
+                <img alt="Cássia Almeida" title="Cássia Almeida" src="@Url.Content("../../Images/cassiaName.png")"/>
+                <label>Software / Web Developer</label>
+            </div>
+        </td>
+        <td>
+            <div id="profileRafael">
+                <img alt="Rafael Cruz" title="Rafael Cruz" class="pictureProfile" src="@Url.Content("../../Images/rafael.png")" onclick="selectProfile(2)" /> <br />
+                <img src="@Url.Content("../../Images/quotes.png")" />
+                <label>To achieve great things, two things are needed: a plan, and not quite enough time - Leonard Bernstein</label>
+                <img alt="Rafael Cruz" title="Rafael Cruz" src="@Url.Content("../../Images/rafaelName.png")" />
+                <label>Software / Web Developer</label>
+            </div>
+        </td>
+        <td>
+            <div id="profileRodrigo">
+                <img alt="Rodrigo Zottis" title="Rodrigo Zottis" class="pictureProfile" src="@Url.Content("../../Images/rodrigo.png")" onclick="selectProfile(3)" /> <br />
+                <img src="@Url.Content("../../Images/quotes.png")" />
+                <label>Creativity is a habit. It’s not something that happens in the shower - Nick Law</label>
+                <img alt="Rodrigo Zottis" title="Rodrigo Zottis" src="@Url.Content("../../Images/rodrigoName.png")" />
+                <label>Illustration & Design</label>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+

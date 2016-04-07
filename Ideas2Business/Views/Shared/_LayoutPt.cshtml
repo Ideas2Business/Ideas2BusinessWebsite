@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ideas2Business</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="Keywords" content="Ideas2Business, Dispositivos Móveis, Desenvolvimento de Websites, Desenvolvimento de Sistemas, Web Design">
+    <meta name="description" content="Ideas2Business, Dispositivos Móveis, Desenvolvimento de Websites, Desenvolvimento de Sistemas, Web Design" >
+    <meta property="og:title" content="Ideas2Business - Onde ideias se tornam negócios" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Somos um time de software e web developers ajudando nossos clientes a resolver seus problemas produzindo serviços inteligentes." />
+    <meta property="og:image" content="http://www.iacquire.com/Images/square.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/scripts")
+</head>
+<body>
+    <header>
+        <nav id="navbarMenu">
+            <img alt="Ideas2Business" onclick="window.location.href = '/'" title="Ideas2Business" src="@Url.Content("../../Images/logo100.png")" style="width:75px;" />
+            <div class="mainMenu">
+                @Html.ActionLink("home", "Index", "Home", null, new { id = "menuHome" })
+                @Html.ActionLink("sobre", "AboutUs", "Home", null, new { id = "menuAboutUs" })
+                @Html.ActionLink("quem somos", "Team", "Home", null, new { id = "menuTeam" })
+                @Html.ActionLink("contato", "ContactUs", "Home", null, new { id = "menuContactUs" })
+              </div>
+            <div class="mainFlags">
+                <img alt="Brasil - Português" title="Brasil - Português" src="@Url.Content("../../Images/brazilIcon.png")" onclick="ChangePt()" />
+                <img alt="English" title="English" src="@Url.Content("../../Images/UsaIcon.png")" onclick="ChangeEn()" />
+            </div>
+        </nav>
+    </header>
+
+    <div id="body">
+        @RenderBody()
+    </div>
+</body>
+</html>

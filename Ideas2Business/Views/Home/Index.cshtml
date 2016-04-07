@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+    $(document).ready(function () {
+        selectMenuItem('home');
+    });
+</script>
+<section id="homeContent">
+    <div>
+        <img id="mainLogo" src="@Url.Content("../../Images/logo300.png")" alt="Ideas2Business" title="Ideas2Business" />
+        <label id="mainText">Where ideas become business</label>
+    </div>
+</section>

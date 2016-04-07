@@ -1,0 +1,366 @@
+/* GENERAL CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+::selection {
+    background: #222222;
+    color:#fff;
+}
+
+body {
+    line-height: 1;
+    background: #f2f2f2;
+    color: #262626;
+    font-family: 'PT Sans', sans-serif;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    margin: 100px 0 50px 0px;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    margin: 50px 0 50px 0px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    margin: 20px 0 20px 0px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px 100px;
+}
+
+.defaultTable td {
+    padding: 25px 10px;
+    text-align: center;
+    line-height: 1.5;
+    width: 20%;
+}
+
+/* CSS TEAM PAGE */
+
+/*#portifolioTd {
+    display:none;
+}
+
+.portifolio {
+   display:none;
+   width:640px;
+}*/
+
+.team {
+    text-align: center;
+    margin-top: 50px !important;
+}
+
+    .team td {
+        width: 320px;
+    }
+
+        /*#profileRafael, #profileCassia, #profileRodrigo {
+    transition:  margin 0.8s;
+    -webkit-transition: margin 0.8s;
+    transition-timing-function:linear;
+}*/
+
+        .team td *:not(img):not(input) {
+            display: block;
+        }
+
+        .team td * {
+            padding: 5px;
+        }
+
+        .team td label:nth-child(4) {
+            color: #777678;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .team td label:nth-child(5) {
+            font-weight: bold;
+        }
+
+        .team td label:nth-child(6) {
+            font-style: italic;
+            font-size: 13px;
+        }
+
+.pictureProfile {
+    width: 200px;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+}
+
+    .pictureProfile:hover {
+        -webkit-filter: initial;
+        -moz-filter: initial;
+        -ms-filter: initial;
+        filter: initial;
+        -webkit-transition-property: filter;
+        -webkit-transition-duration: 0.1s, 0.2s;
+        -webkit-transition-timing-function: linear, ease-in;
+    }
+    
+.column-text {
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+    column-count: 2;
+    column-gap: 50px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+#navbarMenu img {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* MAIN MENU */
+.mainMenu {
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+    margin-left: -250px;
+    left: 50%;
+    position: absolute;
+}
+
+    .mainMenu a {
+        display: inline-block;
+        padding: 20px 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #777;
+    }
+
+        .mainMenu a.selected {
+            color: #fff;
+        }
+
+        .mainMenu a:hover {
+            color: #fff;
+            -webkit-transition-property: color;
+            -webkit-transition-duration: 0.2s, 0.2s;
+            -webkit-transition-timing-function: linear, ease-in;
+        }
+
+.mainFlags {
+    display: inline-block;
+    float: right;
+}
+
+/* CSS CONTACT PAGE */
+
+#contactContent {
+    background: url(../../Images/map.png) no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 55px;
+    left: 0px;
+    text-align: center;
+}
+
+    #contactContent form div {
+        background: #222222;
+        padding: 20px 0px;
+        width: 400px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+        #contactContent form div:nth-child(1) {
+            float: left;
+        }
+
+        #contactContent form div:nth-child(2) {
+            color: #fff;
+            float: right;
+            text-align: left;
+            padding: 20px;
+            line-height: 2;
+        }
+
+    #contactContent div, #contactContent form{
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contactContent input, #contactContent textarea {
+        padding: 10px;
+        border-radius: 5px;
+        width: 300px;
+        display: inline-block;
+        margin: 10px 0px;
+        border: 1px solid #cecece;
+    }
+
+        #contactContent input[type="button"] {
+            background: #54C2FA;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fff;
+            width: 325px;
+        }
+
+            #contactContent input[type="button"]:hover {
+                background: #26993A;
+                -webkit-transition-property: color;
+                -webkit-transition-duration: 0.2s, 0.2s;
+                -webkit-transition-timing-function: linear, ease-in;
+            }
+
+/* CSS HOME */
+
+#navbarMenu {
+    background-color: #1b1b1b;
+    background-image: linear-gradient(to bottom, #444444, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    height: 55px;
+    width: 100%;
+    z-index:9999;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#homeContent {
+    background: url(../../Images/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 55px;
+    left: 0px;
+}
+
+    #homeContent img {
+        margin-bottom: 50px;
+    }
+
+    #homeContent label {
+        font-size: 60px;
+        color: #fff;
+        display: block;
+        clear: both;
+        text-shadow: 1px 1px white, -1px -1px #444;
+    }
+
+    #homeContent div {
+        height: 500px;
+        width: 100%;
+        top: 50%;
+        margin-top: -290px;
+        position: absolute;
+        text-align: center;
+    }
+
+/* FOOTER */
+footer {
+    background-color: #2d2c2c;
+    width: 100%;
+    height: 270px;
+    bottom: 0px;
+    left: 0px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+    footer .col {
+        width: 25%;
+        float: left;
+    }
+
+        footer .col .header {
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 12px;
+            color: #626160;
+            text-align: left;
+            text-shadow: none;
+            font-weight: bold;
+        }
+
+    footer ul li {
+        line-height: 34px;
+    }
